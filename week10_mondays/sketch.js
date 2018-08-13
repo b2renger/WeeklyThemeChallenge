@@ -3,7 +3,7 @@ var ms = ["Macabre", "Mischievous", "Mystic", "Marbled", "Mesmerising", "Metaphy
 var os = ["Oak", "Ocean", "Ocarina", "Obelisk", "Oyster", "Ozone", "Output", "Oscillation"]
 var ns = ["Names", "Narrates", "Nests", "Needs", "Normalizes", "Neglects"]
 var ds = ["Deaf", "Dual", "Dummy", "Dreamy", "Drastic", "Dogmatic", "Disruptive", "Dystopian"]
-var as = ["Adagio", "Antagonism", "Approximation", "Absolute", "Accumulation", "Achievement", "Agitation", "Algotihm"]
+var as = ["Adagio", "Antagonism", "Approximation", "Accumulation", "Achievement", "Agitation", "Algotihm"]
 var ys = ["Youth", "Yellow", "Year", "Yoga", "Yo-yo", "Yodel", "Yucca", "Yesterday", "Yeti", "Yogurt", "Yeast"]
 
 var cs = [["#05668D", "#028090", "#00A896", "#02C39A", "#F48F51"],
@@ -18,7 +18,7 @@ var csId = 0;
 var fonts = ['Monoton', 'Fredericka the Great', 'Faster One', 'Nosifer', 'Sancreek','Plaster']
 var fontId = 5
 
-var det = ["a", "the", "this","that", "any", "all", "each", "every"]
+var det = ["a", "the", "this","that", "any", "each", "every"]
 var detId = [0,1]
 
 var img2
@@ -35,7 +35,7 @@ function setup() {
     img.background(0)
     img.textFont(fonts[fontId])
     textFont(fonts[fontId])
-    textDim  = ((width + height) / 2) / 20
+    textDim  = ((width + height) / 2) / 22
     generateAcrostich();
 
 
@@ -44,7 +44,7 @@ function setup() {
 function draw() {
 
     // animation speed
-    var steps = frameCount / 75
+    var steps = frameCount / 95
 
     // randomize stuff
     if (steps % TWO_PI > 5.5 && change == true && steps % TWO_PI < 6.17) {
