@@ -40,26 +40,26 @@ function draw() {
 
     for (var x = 0; x < pg.width; x++) {
         for (var y = 0; y < pg.height; y++) {
-            var n = noise(x * 0.0023 + noiseX, y * 0.0023 + noiseY, frameCount * 0.004);
-            if (int(n * 941) % 11 == 0) {
-                pg.stroke(152,56,65,75)
+            var n = noise(x * 0.0023 + noiseX, y * 0.0023 + noiseY, frameCount * 0.0014);
+            if (int(n * 231) % 17 == 0) {
+                pg.stroke(152,56,40,255)
                 pg.point(x, y);
             }
-            var n2 = noise(x * 0.0123 + noiseX2, y * 0.0023 + noiseY2, frameCount * 0.0024);
-              if (int(n2 * 229) % 3 == 0) {
-                pg.stroke(194,69,55,75)
-                pg.point(x, y);
-            }
-
-            var n3 = noise(x * 0.0053 + noiseX3, y * 0.0053 + noiseY3, frameCount * 0.0064);
-              if (int(n3 * 733) % 7 == 0) {
-                pg.stroke(242,30,57,75)
+            var n2 = noise(x * 0.0123 + noiseX2, y * 0.1023 + noiseY2, frameCount * 0.0024);
+              if (int(n2 * 211) % 23 == 0) {
+                pg.stroke(194,69,40,255)
                 pg.point(x, y);
             }
 
-            var n4 = noise(x * 0.0077 + noiseX3, y * 0.0077 + noiseY3, frameCount * 0.0014);
-              if (int(n3 * 463) % 17 == 0) {
-                pg.stroke(289,31,54,65)
+            var n3 = noise(x * 0.0053 + noiseX3, y * 0.0053 + noiseY3, frameCount * 0.0094);
+              if (int(n3 * 192) % 7 == 0) {
+                pg.stroke(242,30,40,255)
+                pg.point(x, y);
+            }
+
+            var n4 = noise(x * 0.0077 + noiseX3, y * 0.0077 + noiseY3, frameCount * 0.014);
+              if (int(n3 * 145) % 17 == 0) {
+                pg.stroke(289,31,40,255 )
                 pg.point(x, y);
             }
         }
@@ -69,8 +69,7 @@ function draw() {
    pg.filter(BLUR, 3);
 
     image(pg,0,0 , width, height)
-   // filter(BLUR, 3);
-    //filter(BLUR)
+
 
 
 
