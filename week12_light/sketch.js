@@ -12,32 +12,41 @@ function setup() {
     seed = random(5000)
     frameRate(30)
     strokeCap(SQUARE);
-
+    background(0)
 
 }
 
 function draw() {
 
-    background(0, 0, 0)
+   // background(0, 0, 0)
     randomSeed(seed)
     strokeWeight(10)
-    stroke(255, 0, 100)
+    stroke(255,0,100, 50)
     point(lx, ly)
+    strokeWeight(5)
 
     if (frameCount % 25 == 0) console.log(frameRate())
 
     for (var i = 0; i < 25; i++) {
         // strokeWeight(5)
-        var s = random(30, 120)
-        var s2 = random(30, 120)
+        noFill()
+        var s = int(random(6, 24))*5
+        //var s2 = int(random(6, 24))*5
         var xpos = random(res, width - res)
         var ypos = random(res, height - res)
-        strokeWeight(4)
-        drawLightRect(xpos, ypos, s, s2, 4)
+        noStroke()
+        stroke(220);
+        fill(220)
+        ellipse(xpos,ypos,s)
 
+        strokeWeight(5)
+        drawLightEllipse(xpos, ypos, s-5, 0.075, 4  )
 
+        noFill()
         strokeWeight(2)
-        drawLightRectContour(xpos-2, ypos-2, s+2, s2+2, 2)
+        drawLightEllipseContour(xpos, ypos, s, 0.034)
+
+
 
 
 
@@ -63,6 +72,7 @@ function updateLightSource() {
     t += step
 
     if (int(t % PI) == 0 && change == true) {
+        background(0)
         p = int(random(3, 9))
         q = int(random(3, 9))
         steps = (p + q) / 7000
@@ -82,7 +92,7 @@ function drawLightRect(x, y, w, h, r) {
             if (d < maxD) {
                 var gray = map(d, 0, maxD, 255, 50)
                 var hu = map(d, 0, maxD, 0, 280)
-                stroke(hu, 100, 100, gray/2)
+                stroke(hu, 100, 100,gray/3)
                 point(i, j)
             }
         }
@@ -91,16 +101,17 @@ function drawLightRect(x, y, w, h, r) {
 
 
 
-function drawLightEllipse(x, y, s, r) {
+function drawLightEllipse(x, y, s, r,r2) {
     for (var i = 0; i <= TWO_PI; i += r) {
-        for (var j = 3; j < s / 2; j += 3) {
-            var xpos = x + j * cos(i)
-            var ypos = y + j * sin(i)
+        for (var j = r2; j < (s / 2 ); j += r2) {
+            var xpos = x + int(j) * cos(i)
+            var ypos = y + int(j )* sin(i)
             var d = dist(lx, ly, xpos, ypos)
             if (d < maxD) {
-                var gray = map(d, 0, maxD, 255, 50)
-                stroke(255, 220, 130, gray / 5)
-                line(lx, ly, xpos, ypos)
+                var gray = map(d, 0, maxD, 255, 100)
+                var hu = map(d, 0, maxD, 0, 280)
+                stroke(hu, 100, 100, gray / 3)
+                point( xpos, ypos)
             }
         }
     }
@@ -108,12 +119,12 @@ function drawLightEllipse(x, y, s, r) {
 
 function drawLightEllipseContour(x, y, s, r) {
     for (var i = 0; i <= TWO_PI; i += r) {
-        var xpos = x + s / 2 * cos(i)
-        var ypos = y + s / 2 * sin(i)
+        var xpos = x + int(s / 2) * cos(i)
+        var ypos = y + int(s / 2) * sin(i)
         var d = dist(lx, ly, xpos, ypos)
         if (d < maxD) {
             var gray = map(d, 0, maxD, 255, 50)
-            stroke(255, gray / 2)
+            stroke(255,0,100, 2)
             line(lx, ly, xpos, ypos)
         }
     }
@@ -125,13 +136,13 @@ function drawLightRectContour(x, y, w, h, r) {
         var d = dist(lx, ly, i, y)
         if (d < maxD) {
             var gray = map(d, 0, maxD, 255, 50)
-            stroke(255, gray / 3)
+            stroke(255, 2)
             line(lx, ly, i, y)
         }
         var d = dist(lx, ly, i, y + h)
         if (d < maxD) {
             var gray = map(d, 0, maxD, 255, 50)
-            stroke(255, gray / 3)
+            stroke(255, 2)
             line(lx, ly, i, y + h)
         }
     }
@@ -140,19 +151,20 @@ function drawLightRectContour(x, y, w, h, r) {
         var d = dist(lx, ly, x, j)
         if (d < maxD) {
             var gray = map(d, 0, maxD, 255, 50)
-            stroke(255, gray / 3)
+            stroke(255, 2)
             line(lx, ly, x, j)
         }
         var d = dist(lx, ly, x + w, j)
         if (d < maxD) {
             var gray = map(d, 0, maxD, 255, 50)
-            stroke(255, gray / 3)
+            stroke(255, 2)
             line(lx, ly, x + w, j)
         }
     }
 }
 
 function mouseReleased() {
+    background(0)
     seed = random(9999)
     t = 0
     p = int(random(3, 9))
