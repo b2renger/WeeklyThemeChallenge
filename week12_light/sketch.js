@@ -35,12 +35,12 @@ function draw() {
         var xpos = random(res, width - res)
         var ypos = random(res, height - res)
         noStroke()
-        stroke(220);
-        fill(220)
+        stroke(0);
+        fill(0)
         ellipse(xpos,ypos,s)
 
         strokeWeight(5)
-        drawLightEllipse(xpos, ypos, s-5, 0.075, 4  )
+        drawLightEllipse(xpos, ypos, s-4, 0.095, 4  )
 
         noFill()
         strokeWeight(2)
@@ -110,7 +110,7 @@ function drawLightEllipse(x, y, s, r,r2) {
             if (d < maxD) {
                 var gray = map(d, 0, maxD, 255, 100)
                 var hu = map(d, 0, maxD, 0, 280)
-                stroke(hu, 100, 100, gray / 3)
+                stroke(hu, 90, 100, gray / 5)
                 point( xpos, ypos)
             }
         }
