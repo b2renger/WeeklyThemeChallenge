@@ -123,6 +123,7 @@ function drawLightEllipseContour(x, y, s, r) {
         var ypos = y + int(s / 2) * sin(i)
         var d = dist(lx, ly, xpos, ypos)
         if (d < maxD) {
+            strokeWeight(0.25)
             var gray = map(d, 0, maxD, 255, 50)
             stroke(255,0,100, 2)
             line(lx, ly, xpos, ypos)
