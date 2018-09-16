@@ -1,4 +1,4 @@
-# [Weekly Theme Challenge](https://acare21.wixsite.com/weeklythemechallenge/blog)
+# Weekly Theme Challenge - [check out the other contributions](https://acare21.wixsite.com/weeklythemechallenge/blog)
 
 <img src="images/week09_cactus.jpeg" width="320" height="240" />
 <img src="images/week09_cactus.gif" width="320" height="240" />
