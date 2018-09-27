@@ -45,9 +45,8 @@ You should put up some music for this one : why not [Sio's contribution](https:/
 
 [Theme : Movement - optical flow rotating cubes layed out in a grid](https://b2renger.github.io/WeeklyThemeChallenge/week15_movement/)
 <br></br>
-
 <img src="images/week16_samourai.png" width="320" height="240" />
-<img src="images/week15_samourai.gif" width="320" height="240" />
+<img src="images/week16_samourai.gif" width="320" height="240" />
 
-[Theme : Samourai - style transfer on webcam from japanese samourai prints](https://b2renger.github.io/WeeklyThemeChallenge/week16_movement/)
+[Theme : Samourai - style transfer on webcam from japanese samourai prints](https://b2renger.github.io/WeeklyThemeChallenge/week16_samourai/)
 <br></br>
