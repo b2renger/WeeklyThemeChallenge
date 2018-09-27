@@ -1,5 +1,6 @@
 # Weekly Theme Challenge - [check out the other contributions](https://acare21.wixsite.com/weeklythemechallenge/blog)
 
+<br></br>
 <img src="images/week09_cactus.jpeg" width="320" height="240" />
 <img src="images/week09_cactus.gif" width="320" height="240" />
 
@@ -43,4 +44,10 @@ You should put up some music for this one : why not [Sio's contribution](https:/
 <img src="images/week15_movement.gif" width="320" height="240" />
 
 [Theme : Movement - optical flow rotating cubes layed out in a grid](https://b2renger.github.io/WeeklyThemeChallenge/week15_movement/)
+<br></br>
+
+<img src="images/week16_samourai.png" width="320" height="240" />
+<img src="images/week15_samourai.gif" width="320" height="240" />
+
+[Theme : Samourai - style transfer on webcam from japanese samourai prints](https://b2renger.github.io/WeeklyThemeChallenge/week16_movement/)
 <br></br>
