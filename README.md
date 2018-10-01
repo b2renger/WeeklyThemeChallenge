@@ -53,7 +53,7 @@ You should put up some music for this one : why not [Sio's contribution](https:/
 <img src="images/week17_smoke.png" width="320" height="240" />
 <img src="images/week17_smoke.gif" width="320" height="240" />
 
-[Theme : Smoke - Data driven smoke particle system](https://b2renger.github.io/WeeklyThemeChallenge/week17/)
+[Theme : Smoke - Data driven smoke particle system](https://b2renger.github.io/WeeklyThemeChallenge/week17_smoke/)
 
 Weather data comes from [openweather api](https://openweathermap.org/api) - wind force and wind direction are used. Pollution data come from [aqicn api](http://aqicn.org/json-api/doc/) - PM10 are dusts, pollens, mold volatile components, PM25 are associated to combustion, metals etc. 
 <br></br>
