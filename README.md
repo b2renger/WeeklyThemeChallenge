@@ -60,7 +60,7 @@ Weather data comes from [openweather api](https://openweathermap.org/api) - wind
 <img src="images/week18_dinosaurs.png" width="320" height="240" />
 <img src="images/week18_dinosaurs.gif" width="320" height="240" />
 
-[Theme : Dinosaurs #EndOfTheWorld #LastPterodactyl](https://b2renger.github.io/WeeklyThemeChallenge/week18_dinosaurs/)
+[Theme : Dinosaurs #EndOfTheWorld #LastPterodactyl](https://b2renger.github.io/WeeklyThemeChallenge/week18_dino/)
 
 <br></br>
 <img src="images/week19_electricity.png" width="320" height="240" />
